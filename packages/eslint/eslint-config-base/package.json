@@ -1,0 +1,25 @@
+{
+	"name": "@smartlook/eslint-config-base",
+	"description": "Smartlook ESLint base configuration",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "index.js",
+	"engines": {
+		"node": "^14 || >=16"
+	},
+	"homepage": "https://github.com/smartlook/code-quality#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/smartlook/code-quality.git"
+	},
+	"bugs": {
+		"url": "https://github.com/smartlook/code-quality/issues"
+	},
+	"peerDependencies": {
+		"eslint": "^8.0"
+	},
+	"dependencies": {
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-unicorn": "^39.0.0"
+	}
+}

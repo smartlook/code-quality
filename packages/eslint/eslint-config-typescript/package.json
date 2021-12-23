@@ -1,0 +1,26 @@
+{
+	"name": "@smartlook/eslint-config-typescript",
+	"description": "Smartlook ESLint configuration for TypeScript",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "index.js",
+	"engines": {
+		"node": "^14 || >=16"
+	},
+	"homepage": "https://github.com/smartlook/code-quality#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/smartlook/code-quality.git"
+	},
+	"bugs": {
+		"url": "https://github.com/smartlook/code-quality/issues"
+	},
+	"peerDependencies": {
+		"eslint": "^8.0"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.6.0",
+		"@typescript-eslint/parser": "^5.6.0",
+		"eslint-import-resolver-typescript": "^2.5.0"
+	}
+}

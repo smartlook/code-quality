@@ -1,0 +1,19 @@
+{
+	"name": "code-quality",
+	"description": "Smartlook common config 🪢",
+	"version": "1.0.0",
+	"license": "MIT",
+	"homepage": "https://github.com/smartlook/code-quality#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/smartlook/code-quality.git"
+	},
+	"bugs": {
+		"url": "https://github.com/smartlook/code-quality/issues"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^15.0.0",
+		"@commitlint/config-conventional": "^15.0.0",
+		"husky": "^7.0.4"
+	}
+}

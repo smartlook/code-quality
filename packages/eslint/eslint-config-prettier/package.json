@@ -1,0 +1,25 @@
+{
+	"name": "@smartlook/eslint-config-prettier",
+	"description": "Smartlook ESLint configuration for Prettier",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "index.js",
+	"engines": {
+		"node": "^14 || >=16"
+	},
+	"homepage": "https://github.com/smartlook/code-quality#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/smartlook/code-quality.git"
+	},
+	"bugs": {
+		"url": "https://github.com/smartlook/code-quality/issues"
+	},
+	"peerDependencies": {
+		"eslint": "^8.0"
+	},
+	"dependencies": {
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0"
+	}
+}

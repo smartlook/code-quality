@@ -1,0 +1,24 @@
+{
+	"name": "@smartlook/eslint-config-node",
+	"description": "Smartlook ESLint configuration for Node.js",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "index.js",
+	"engines": {
+		"node": "^14 || >=16"
+	},
+	"homepage": "https://github.com/smartlook/code-quality#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/smartlook/code-quality.git"
+	},
+	"bugs": {
+		"url": "https://github.com/smartlook/code-quality/issues"
+	},
+	"peerDependencies": {
+		"eslint": "^8.0"
+	},
+	"dependencies": {
+		"eslint-plugin-node": "^11.0.0"
+	}
+}
