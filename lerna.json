@@ -1,0 +1,14 @@
+{
+	"version": "independent",
+	"npmClient": "npm",
+	"command": {
+		"version": {
+			"allowBranch": "main",
+			"message": "chore(release): publish",
+			"conventionalCommits": true,
+			"push": true,
+			"ignoreChanges": ["**/*.md"]
+		}
+	},
+	"packages": ["packages/eslint/*", "packages/prettier/*"]
+}

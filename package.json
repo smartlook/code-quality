@@ -1,8 +1,11 @@
 {
 	"name": "code-quality",
 	"description": "Smartlook common config 🪢",
-	"version": "1.0.0",
+	"private": "true",
 	"license": "MIT",
+	"scripts": {
+		"publish": "lerna publish from-git --no-verify-access --yes"
+	},
 	"homepage": "https://github.com/smartlook/code-quality#readme",
 	"repository": {
 		"type": "git",
