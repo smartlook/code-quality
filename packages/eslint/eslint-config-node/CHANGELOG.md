@@ -1,0 +1,11 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 1.1.0 (2021-12-26)
+
+
+### Features
+
+* add configuration files ([e46d405](https://github.com/smartlook/code-quality/commit/e46d4050b52796b84c7f00bf92cb75025ab7d24d))
