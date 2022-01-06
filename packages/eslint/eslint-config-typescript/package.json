@@ -1,7 +1,7 @@
 {
 	"name": "@smartlook/eslint-config-typescript",
 	"description": "Smartlook ESLint configuration for TypeScript",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"license": "MIT",
 	"main": "index.js",
 	"publishConfig": {
