@@ -71,5 +71,60 @@ module.exports = {
 		'require-yield': 'error',
 		'sort-keys': 'off',
 		'vars-on-top': 'warn',
+		'no-duplicate-imports': 'off',
+		'sort-imports': 'off',
+		/////////////////////////////////
+		// @eslint-plugin-import rules //
+		/////////////////////////////////
+		'import/no-unresolved': 'error',
+		'import/no-default-export': 'error',
+		'import/no-extraneous-dependencies': [
+			'error',
+			{
+				devDependencies: false,
+				optionalDependencies: false,
+				peerDependencies: false,
+			},
+		],
+		'import/no-internal-modules': 'off',
+		'import/no-absolute-path': 'error',
+		'import/no-self-import': 'error',
+		'import/no-cycle': 'error',
+		'import/no-useless-path-segments': 'warn',
+		// TODO: Cannot read property 'get' of undefined Occurred while linting [file]
+		// Rule: "import/no-unused-modules"
+		'import/no-unused-modules': [
+			'off',
+			{
+				unusedExports: true,
+				ignoreExports: ['./src/bootstrap.ts'],
+			},
+		],
+		'import/no-duplicates': 'warn',
+		'import/order': [
+			'error',
+			{
+				'newlines-between': 'always',
+				pathGroups: [
+					{
+						pattern: '@smartlook/**',
+						group: 'external',
+						position: 'after',
+					},
+				],
+				pathGroupsExcludedImportTypes: ['builtin'],
+				alphabetize: { order: 'asc', caseInsensitive: true },
+			},
+		],
+		'import/namespace': 'off',
+		//////////////////////////////////
+		// @eslint-plugin-unicorn rules //
+		//////////////////////////////////
+		'unicorn/filename-case': [
+			'error',
+			{
+				case: 'kebabCase',
+			},
+		],
 	},
 }
