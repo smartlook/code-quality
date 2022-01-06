@@ -196,5 +196,6 @@ module.exports = {
 		],
 		'default-param-last': 'off',
 		'@typescript-eslint/default-param-last': ['error'],
+		'@typescript-eslint/no-unsafe-argument': 'warn',
 	},
 }
