@@ -1,13 +1,13 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/"
-    versioning-strategy: increase-if-necessary
+    directory: '/'
+    versioning-strategy: increase
     schedule:
       interval: daily
-      time: "08:00"
+      time: '08:00'
       timezone: Europe/Prague
     pull-request-branch-name:
-      separator: "/"
+      separator: '/'
     commit-message:
       prefix: chore
