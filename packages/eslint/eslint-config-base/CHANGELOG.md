@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/smartlook/code-quality/compare/@smartlook/eslint-config-base@1.2.0...@smartlook/eslint-config-base@1.3.0) (2022-01-25)
+
+**Note:** Version bump only for package @smartlook/eslint-config-base
+
+
+
+
+
 # [1.2.0](https://github.com/smartlook/code-quality/compare/@smartlook/eslint-config-base@1.1.0...@smartlook/eslint-config-base@1.2.0) (2022-01-06)
 
 
