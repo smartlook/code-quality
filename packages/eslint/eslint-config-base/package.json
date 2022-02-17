@@ -23,6 +23,6 @@
 	},
 	"dependencies": {
 		"eslint-plugin-import": "^2.25.3",
-		"eslint-plugin-unicorn": "^40.0.0"
+		"eslint-plugin-unicorn": "^41.0.0"
 	}
 }
