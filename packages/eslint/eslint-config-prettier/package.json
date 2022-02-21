@@ -22,7 +22,7 @@
 		"eslint": "^8.0"
 	},
 	"dependencies": {
-		"eslint-config-prettier": "^8.3.0",
+		"eslint-config-prettier": "^8.4.0",
 		"eslint-plugin-prettier": "^4.0.0"
 	}
 }
