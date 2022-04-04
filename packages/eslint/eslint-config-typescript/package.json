@@ -24,6 +24,6 @@
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.17.0",
 		"@typescript-eslint/parser": "^5.17.0",
-		"eslint-import-resolver-typescript": "^2.7.0"
+		"eslint-import-resolver-typescript": "^2.7.1"
 	}
 }
