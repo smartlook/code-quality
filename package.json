@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"scripts": {
 		"ci:version": "changeset version",
-		"ci:publish": "changeset publish"
+		"ci:publish": "changeset publish",
+		"bump": "changeset"
 	},
 	"homepage": "https://github.com/smartlook/code-quality#readme",
 	"repository": {
