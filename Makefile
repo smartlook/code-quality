@@ -8,20 +8,4 @@ help:
 # install: install dependencies
 install:
 	@echo "Installing dependencies..."
-	npm i
-
-# release: bump version, create new tag and push to NPM
-release:
-	@echo "Creating new release..."
-	@echo "After specifying the version, new tag will be published to main branch and released to NPM."
-	@if [[ -z "$(CI)" ]]; then \
-		REPLY="" ; \
-		read -p "⚠ Are you sure? [y/n] > " -r ; \
-		if [[ ! $$REPLY =~ ^[Yy]$$ ]]; then \
-			printf $(_ERROR) "KO" "Stopping" ; \
-			exit 1 ; \
-		else \
-			lerna version ; \
-			exit 0; \
-		fi \
-	fi
+	pnpm i

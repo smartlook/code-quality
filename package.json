@@ -4,7 +4,8 @@
 	"private": "true",
 	"license": "MIT",
 	"scripts": {
-		"publish": "lerna publish from-git --no-verify-access --yes"
+		"ci:version": "changeset version",
+		"ci:publish": "changeset publish"
 	},
 	"homepage": "https://github.com/smartlook/code-quality#readme",
 	"repository": {
@@ -15,6 +16,7 @@
 		"url": "https://github.com/smartlook/code-quality/issues"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.22.0",
 		"@commitlint/cli": "^16.2.4",
 		"@commitlint/config-conventional": "^16.2.4",
 		"husky": "^8.0.0"
