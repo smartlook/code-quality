@@ -1,0 +1,24 @@
+name: Renovate
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 4 * * 1'
+
+env:
+  CI: true
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+
+      - name: Renovate
+        uses: renovatebot/github-action@v32.45.5
+        with:
+          configurationFile: .github/renovate.json
+          token: ${{ secrets.RENOVATE_TOKEN }}
