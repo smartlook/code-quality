@@ -158,40 +158,42 @@ module.exports = {
 				leadingUnderscore: 'allow',
 				trailingUnderscore: 'allow',
 			},
-
 			{
 				selector: 'variableLike',
 				format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
 				leadingUnderscore: 'allow',
 				trailingUnderscore: 'allow',
 			},
-
 			{
 				selector: 'typeLike',
 				format: ['PascalCase'],
 			},
-
 			{
 				selector: ['memberLike'],
 				leadingUnderscore: 'allow',
 				format: ['camelCase', 'snake_case', 'PascalCase'],
 			},
-
 			{
 				selector: 'property',
 				modifiers: ['static'],
 				format: ['camelCase', 'UPPER_CASE'],
 			},
-
 			{
 				selector: 'class',
 				format: ['PascalCase', 'camelCase'],
 			},
-
 			{
 				selector: 'interface',
 				format: ['PascalCase'],
 				prefix: ['I'],
+			},
+		],
+		'@typescript-eslint/naming-convention': [
+			'warn',
+			{
+				selector: 'objectLiteralProperty',
+				modifiers: ['public'],
+				format: ['camelCase', 'UPPER_CASE'],
 			},
 		],
 		'default-param-last': 'off',
