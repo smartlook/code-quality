@@ -3,7 +3,7 @@ name: Renovate
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 4 * * 1'
+    - cron: '20 4 * * *'
 
 env:
   CI: true
