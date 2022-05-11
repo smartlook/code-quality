@@ -1,0 +1,6 @@
+{
+	"editor.tabSize": 4,
+	"[yaml]": {
+		"editor.tabSize": 2
+	}
+}
