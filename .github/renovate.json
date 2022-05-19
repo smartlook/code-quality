@@ -2,9 +2,12 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:base"],
 	"assignees": ["samialdury"],
+	"reviewers": ["samialdury"],
 	"labels": ["dependencies", "tooling"],
 	"onboarding": false,
 	"repositories": ["smartlook/code-quality"],
+	"prConcurrentLimit": 0,
+	"prHourlyLimit": 0,
 	"packageRules": [
 		{
 			"matchPackagePatterns": ["eslint", "prettier"],
@@ -13,6 +16,14 @@
 		{
 			"matchPackagePatterns": ["eslint"],
 			"groupName": "eslint"
+		},
+		{
+			"matchDepTypes": ["dependencies", "devDependencies"],
+			"rangeStrategy": "pin"
+		},
+		{
+			"matchDepTypes": ["peerDependencies"],
+			"enabled": false
 		}
 	]
 }
