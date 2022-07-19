@@ -19,9 +19,9 @@ jobs:
 
       - name: Renovate
         uses: renovatebot/github-action@v32.119.1
-         with:
+        with:
           configurationFile: .github/renovate.json
           token: ${{ secrets.UNSAFE_RUDOLF_GH_TOKEN }}
-         env:
+        env:
           LOG_LEVEL: 'debug'
           RENOVATE_GIT_PRIVATE_KEY: ${{ secrets.RUDOLF_GPG_SECRET_KEY }}
