@@ -17,7 +17,7 @@
 		"url": "https://github.com/smartlook/code-quality/issues"
 	},
 	"devDependencies": {
-		"@changesets/cli": "2.24.1",
+		"@changesets/cli": "2.24.3",
 		"@commitlint/cli": "17.0.3",
 		"@commitlint/config-conventional": "17.0.3",
 		"husky": "8.0.1"
