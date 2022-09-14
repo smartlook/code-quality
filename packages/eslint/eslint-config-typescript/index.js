@@ -193,7 +193,13 @@ module.exports = {
 			{
 				selector: 'objectLiteralProperty',
 				modifiers: ['public'],
-				format: ['camelCase', 'UPPER_CASE'],
+				format: ['PascalCase', 'snake_case', 'camelCase', 'UPPER_CASE'],
+				leadingUnderscore: 'allow',
+				filter: {
+					regex:
+						'^(0|[1-9]d*).(0|[1-9]d*).(0|[1-9]d*)|^([0-9]{3})|^([a-zA-Z0-9]*-[a-zA-Z0-9]*)+$',
+					match: false,
+				},
 			},
 		],
 		'default-param-last': 'off',

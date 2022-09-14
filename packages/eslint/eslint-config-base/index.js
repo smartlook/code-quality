@@ -73,6 +73,8 @@ module.exports = {
 		'vars-on-top': 'warn',
 		'no-duplicate-imports': 'off',
 		'sort-imports': 'off',
+		'no-return-await': 'error',
+
 		/////////////////////////////////
 		// @eslint-plugin-import rules //
 		/////////////////////////////////
