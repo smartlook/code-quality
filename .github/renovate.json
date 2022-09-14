@@ -14,19 +14,19 @@
 	"packageRules": [
 		{
 			"matchPackagePatterns": ["eslint", "prettier"],
-			"labels": ["styling"]
+			"labels": ["dependencies", "styling"]
 		},
 		{
-			"matchPackagePatterns": ["eslint"],
-			"groupName": "eslint"
+			"matchPackagePatterns": ["action"],
+			"labels": ["dependencies", "ci"]
 		},
 		{
-			"matchDepTypes": ["dependencies", "devDependencies"],
-			"rangeStrategy": "pin"
+			"matchPackagePatterns": ["eslint", "prettier"],
+			"groupName": "ESLint + Prettier dependencies"
 		},
 		{
-			"matchDepTypes": ["peerDependencies"],
-			"enabled": false
+			"matchPackagePatterns": ["action"],
+			"groupName": "GitHub Actions"
 		}
 	]
 }
