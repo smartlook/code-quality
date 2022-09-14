@@ -16,9 +16,9 @@ importers:
 
   packages/eslint/eslint-config-base:
     specifiers:
-      eslint: 8.23.1
-      eslint-plugin-import: 2.26.0
-      eslint-plugin-unicorn: 43.0.2
+      eslint: ^8.23.1
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-unicorn: ^43.0.2
     dependencies:
       eslint: 8.23.1
       eslint-plugin-import: 2.26.0_eslint@8.23.1
@@ -26,18 +26,18 @@ importers:
 
   packages/eslint/eslint-config-node:
     specifiers:
-      eslint: 8.23.1
-      eslint-plugin-node: 11.1.0
+      eslint: ^8.23.1
+      eslint-plugin-node: ^11.1.0
     dependencies:
       eslint: 8.23.1
       eslint-plugin-node: 11.1.0_eslint@8.23.1
 
   packages/eslint/eslint-config-prettier:
     specifiers:
-      eslint: 8.23.1
-      eslint-config-prettier: 8.5.0
-      eslint-plugin-prettier: 4.2.1
-      prettier: 2.7.1
+      eslint: ^8.23.1
+      eslint-config-prettier: ^8.5.0
+      eslint-plugin-prettier: ^4.2.1
+      prettier: ^2.7.1
     dependencies:
       eslint: 8.23.1
       eslint-config-prettier: 8.5.0_eslint@8.23.1
@@ -46,12 +46,12 @@ importers:
 
   packages/eslint/eslint-config-typescript:
     specifiers:
-      '@typescript-eslint/eslint-plugin': 5.37.0
-      '@typescript-eslint/parser': 5.37.0
-      eslint: 8.23.1
-      eslint-import-resolver-typescript: 3.5.1
-      eslint-plugin-import: 2.26.0
-      typescript: 4.8.3
+      '@typescript-eslint/eslint-plugin': ^5.37.0
+      '@typescript-eslint/parser': ^5.37.0
+      eslint: ^8.23.1
+      eslint-import-resolver-typescript: ^3.5.1
+      eslint-plugin-import: ^2.26.0
+      typescript: ^4.8.3
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.37.0_22c5fnooleyfkzrkkgdmel5kmi
       '@typescript-eslint/parser': 5.37.0_irgkl5vooow2ydyo6aokmferha
@@ -975,7 +975,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: false
 
   /conventional-changelog-angular/5.0.13:
@@ -1386,7 +1386,7 @@ packages:
       eslint-import-resolver-node: 0.3.6
       eslint-module-utils: 2.7.3_yotz5rgxbsebaglktiy7k3y6ua
       has: 1.0.3
-      is-core-module: 2.9.0
+      is-core-module: 2.10.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.values: 1.1.5
@@ -1416,7 +1416,7 @@ packages:
       eslint-import-resolver-node: 0.3.6
       eslint-module-utils: 2.7.3_ulu2225r2ychl26a37c6o2rfje
       has: 1.0.3
-      is-core-module: 2.9.0
+      is-core-module: 2.10.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.values: 1.1.5
@@ -2046,12 +2046,6 @@ packages:
     resolution: {integrity: sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==}
     dependencies:
       has: 1.0.3
-
-  /is-core-module/2.9.0:
-    resolution: {integrity: sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==}
-    dependencies:
-      has: 1.0.3
-    dev: false
 
   /is-date-object/1.0.5:
     resolution: {integrity: sha512-9YQaSxsAiSwcvS33MBk3wTCVnWK+HhF8VZR2jRxehM16QcVOdHqPn4VPHmRK4lSr38n9JriurInLcP90xsYNfQ==}
