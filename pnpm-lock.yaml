@@ -18,11 +18,11 @@ importers:
     specifiers:
       eslint: ^8.23.1
       eslint-plugin-import: ^2.26.0
-      eslint-plugin-unicorn: ^44.0.0
+      eslint-plugin-unicorn: ^45.0.0
     dependencies:
       eslint: 8.23.1
       eslint-plugin-import: 2.26.0_eslint@8.23.1
-      eslint-plugin-unicorn: 44.0.0_eslint@8.23.1
+      eslint-plugin-unicorn: 45.0.0_eslint@8.23.1
 
   packages/eslint/eslint-config-node:
     specifiers:
@@ -568,7 +568,7 @@ packages:
   /@types/is-ci/3.0.0:
     resolution: {integrity: sha512-Q0Op0hdWbYd1iahB+IFNQcWXFq4O0Q5MwQP7uN0souuQ4rPg1vEYcnIOfr1gY+M+6rc8FGoRaBO1mOOvL29sEQ==}
     dependencies:
-      ci-info: 3.4.0
+      ci-info: 3.6.1
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -919,8 +919,9 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /ci-info/3.4.0:
-    resolution: {integrity: sha512-t5QdPT5jq3o262DOQ8zA6E1tlH2upmUc4Hlvrbx1pGYJuiiHl7O7rvVNI+l8HTVhd/q3Qc9vqimkNk5yiXsAug==}
+  /ci-info/3.6.1:
+    resolution: {integrity: sha512-up5ggbaDqOqJ4UqLKZ2naVkyqSJQgJi5lwD6b6mM748ysrghDBX0bx/qJTUHzw7zu6Mq4gycviSF5hJnwceD8w==}
+    engines: {node: '>=8'}
 
   /clean-regexp/1.0.0:
     resolution: {integrity: sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw==}
@@ -1460,26 +1461,28 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: false
 
-  /eslint-plugin-unicorn/44.0.0_eslint@8.23.1:
-    resolution: {integrity: sha512-GbkxkdNzY7wNEfZnraAP+oA+aqqzSrNZmO37kjW1DyqnSK/ah08ySDdIecObpx46twv+zcQvH8i0CHP98Wo64w==}
+  /eslint-plugin-unicorn/45.0.0_eslint@8.23.1:
+    resolution: {integrity: sha512-iP8cMRxXKHonKioOhnCoCcqVhoqhAp6rB+nsoLjXFDxTHz3btWMAp8xwzjHA0B1K6YV/U/Yvqn1bUXZt8sJPuQ==}
     engines: {node: '>=14.18'}
     peerDependencies:
-      eslint: '>=8.23.1'
+      eslint: '>=8.28.0'
     dependencies:
       '@babel/helper-validator-identifier': 7.19.1
-      ci-info: 3.4.0
+      ci-info: 3.6.1
       clean-regexp: 1.0.0
       eslint: 8.23.1
       eslint-utils: 3.0.0_eslint@8.23.1
       esquery: 1.4.0
       indent-string: 4.0.0
       is-builtin-module: 3.2.0
+      jsesc: 3.0.2
       lodash: 4.17.21
       pluralize: 8.0.0
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.24
+      regjsparser: 0.9.1
       safe-regex: 2.1.1
-      semver: 7.3.7
+      semver: 7.3.8
       strip-indent: 3.0.0
     dev: false
 
@@ -2039,7 +2042,7 @@ packages:
     resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
     hasBin: true
     dependencies:
-      ci-info: 3.4.0
+      ci-info: 3.6.1
     dev: true
 
   /is-core-module/2.10.0:
@@ -2181,6 +2184,17 @@ packages:
     hasBin: true
     dependencies:
       argparse: 2.0.1
+    dev: false
+
+  /jsesc/0.5.0:
+    resolution: {integrity: sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==}
+    hasBin: true
+    dev: false
+
+  /jsesc/3.0.2:
+    resolution: {integrity: sha512-xKqzzWXDttJuOcawBt4KnKHHIf5oQ/Cxax+0PWFG+DFDgHNAdi+TXECADI+RYiFUMmx8792xsMbbgXj4CwnP4g==}
+    engines: {node: '>=6'}
+    hasBin: true
     dev: false
 
   /json-parse-even-better-errors/2.3.1:
@@ -2424,7 +2438,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.10.0
-      semver: 7.3.7
+      semver: 7.3.8
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -2741,6 +2755,13 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /regjsparser/0.9.1:
+    resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
+    hasBin: true
+    dependencies:
+      jsesc: 0.5.0
+    dev: false
+
   /require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -2820,6 +2841,13 @@ packages:
 
   /semver/7.3.7:
     resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+
+  /semver/7.3.8:
+    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
