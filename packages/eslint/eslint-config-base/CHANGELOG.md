@@ -1,5 +1,11 @@
 # @smartlook/eslint-config-base
 
+## 1.6.0
+
+### Minor Changes
+
+- 4494eca: pin dependencies
+
 ## 1.5.1
 
 ### Patch Changes
