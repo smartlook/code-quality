@@ -18,7 +18,7 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Renovate
-        uses: renovatebot/github-action@v36.0.3
+        uses: renovatebot/github-action@v36.1.1
         with:
           configurationFile: .github/renovate.json
           token: ${{ secrets.UNSAFE_RUDOLF_GH_TOKEN }}
