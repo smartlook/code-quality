@@ -28,13 +28,8 @@ jobs:
       - name: Install pnpm
         run: npm i pnpm@9 -g
 
-      - name: Setup registry
-        working-directory: .
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}
-            @smartlook:registry=https://npm.pkg.github.com
-          EOF
+      - name: Setup npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Setup pnpm cache directory
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
@@ -51,4 +46,3 @@ jobs:
           publish: pnpm ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
