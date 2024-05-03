@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"main": "index.js",
 	"publishConfig": {
-		"access": "public"
+		"access": "public",
+		"registry": "https://npm.pkg.github.com"
 	},
 	"engines": {
 		"node": "^14 || >=16"
