@@ -29,7 +29,9 @@ jobs:
         run: npm i pnpm@9 -g
 
       - name: Setup npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+        run: |
+          echo "@smartlook:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: Setup pnpm cache directory
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
