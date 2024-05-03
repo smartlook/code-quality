@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://npm.pkg.github.com'
+          scope: '@smartlook'
 
       - name: Install pnpm
         run: npm i pnpm@9 -g
