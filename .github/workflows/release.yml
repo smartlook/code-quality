@@ -53,3 +53,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOME: ${{ github.workspace }}
+          npm_config_registry: 'https://npm.pkg.github.com'
