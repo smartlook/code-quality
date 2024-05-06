@@ -3,21 +3,16 @@
 	"description": "Smartlook common config 🪢",
 	"private": "true",
 	"license": "MIT",
-	"scripts": {
-		"ci:version": "changeset version",
-		"ci:publish": "changeset publish",
-		"bump": "changeset"
-	},
+	"scripts": {},
 	"homepage": "https://github.com/smartlook/code-quality#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/smartlook/code-quality.git"
+		"url": "https://github.com/smartlook/code-quality"
 	},
 	"bugs": {
 		"url": "https://github.com/smartlook/code-quality/issues"
 	},
 	"devDependencies": {
-		"@changesets/cli": "2.26.1",
 		"@commitlint/cli": "17.6.1",
 		"@commitlint/config-conventional": "17.6.1",
 		"husky": "8.0.3"

@@ -22,13 +22,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install pnpm
-        run: npm i pnpm@8 -g
-
-      - name: Setup npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+        run: npm i pnpm@9 -g
 
       - name: Setup pnpm cache directory
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
@@ -36,12 +33,18 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Create and publish versions
-        uses: changesets/action@v1
-        with:
-          version: pnpm ci:version
-          commit: 'chore: update versions'
-          title: 'chore: update versions'
-          publish: pnpm ci:publish
+      - name: Publish packages
+        working-directory: .
+        run: |
+          npm config set //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+          CWD=`pwd`
+
+          cd $CWD/packages/eslint/eslint-config-base && npm ${{ env.PUBLISH_COMMAND }}
+          cd $CWD/packages/eslint/eslint-config-node && npm ${{ env.PUBLISH_COMMAND }}
+          cd $CWD/packages/eslint/eslint-config-prettier && npm ${{ env.PUBLISH_COMMAND }}
+          cd $CWD/packages/eslint/eslint-config-typescript && npm ${{ env.PUBLISH_COMMAND }}
+          cd $CWD/packages/prettier/prettier-config && npm ${{ env.PUBLISH_COMMAND }}
+          cd $CWD
         env:
+          PUBLISH_COMMAND: ${{ contains(github.ref, 'beta') && 'publish --tag beta' || 'publish' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

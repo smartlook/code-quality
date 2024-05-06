@@ -1,5 +1,11 @@
 # @smartlook/eslint-config-base
 
+## 1.7.0
+
+### Major Changes
+
+- publish to github registry
+
 ## 1.6.0
 
 ### Minor Changes
