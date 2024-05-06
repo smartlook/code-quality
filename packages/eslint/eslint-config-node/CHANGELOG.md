@@ -1,5 +1,12 @@
 # @smartlook/eslint-config-node
 
+## 1.8.0
+
+### Major Changes
+
+- same version across all packages
+- bump packages
+
 ## 1.6.0
 
 ### Major Changes

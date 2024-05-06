@@ -1,7 +1,7 @@
 {
 	"name": "@smartlook/eslint-config-base",
 	"description": "Smartlook ESLint base configuration",
-	"version": "1.7.1",
+	"version": "1.8.0",
 	"license": "MIT",
 	"main": "index.js",
 	"publishConfig": {
@@ -24,8 +24,8 @@
 		"eslint": "^8.0"
 	},
 	"dependencies": {
-		"eslint": "8.39.0",
-		"eslint-plugin-import": "2.27.5",
-		"eslint-plugin-unicorn": "46.0.0"
+		"eslint": "8.57.0",
+		"eslint-plugin-import": "2.29.1",
+		"eslint-plugin-unicorn": "52.0.0"
 	}
 }
