@@ -42,7 +42,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Create and publish versions
-        uses: Joozty/changeset-action@786795e286861d527e34bc85f9b752938def9858
+        uses: Joozty/changeset-action@12197dbaeefe3b4fd22cbb4a9ec340c85a2641ec
         with:
           version: pnpm ci:version
           commit: 'chore: update versions'
