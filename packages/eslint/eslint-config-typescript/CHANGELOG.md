@@ -1,5 +1,12 @@
 # @smartlook/eslint-config-typescript
 
+## 1.8.0
+
+### Major Changes
+
+- same version across all packages
+- bump packages
+
 ## 1.7.0
 
 ### Major Changes

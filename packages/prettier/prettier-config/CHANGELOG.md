@@ -1,5 +1,12 @@
 # @smartlook/prettier-config
 
+## 1.8.0
+
+### Major Changes
+
+- same version across all packages
+- bump packages
+
 ## 1.5.0
 
 ### Major Changes
