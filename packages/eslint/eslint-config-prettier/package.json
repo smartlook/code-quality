@@ -1,7 +1,7 @@
 {
 	"name": "@smartlook/eslint-config-prettier",
 	"description": "Smartlook ESLint configuration for Prettier",
-	"version": "1.6.0",
+	"version": "1.6.1",
 	"license": "MIT",
 	"main": "index.js",
 	"publishConfig": {
