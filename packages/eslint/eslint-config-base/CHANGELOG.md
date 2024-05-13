@@ -1,5 +1,11 @@
 # @smartlook/eslint-config-base
 
+## 1.8.1
+
+## Patch Changes
+
+- fix @typescript-eslint rules
+
 ## 1.8.0
 
 ### Major Changes
