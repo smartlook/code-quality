@@ -90,7 +90,7 @@ module.exports = {
 			{
 				builtinGlobals: true,
 				hoist: 'functions',
-				allow: ['name'],
+				allow: ['name', 'crypto'],
 			},
 		],
 		'no-throw-literal': 'off',
@@ -119,7 +119,8 @@ module.exports = {
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/no-unsafe-return': 'warn',
 		'@typescript-eslint/prefer-literal-enum-member': 'warn',
-		'@typescript-eslint/prefer-nullish-coalescing': 'warn',
+		// requries strictNullChecks which is not enabled in backend repos
+		// '@typescript-eslint/prefer-nullish-coalescing': 'warn',
 		'@typescript-eslint/prefer-optional-chain': 'warn',
 		'@typescript-eslint/prefer-reduce-type-parameter': 'warn',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'warn',
@@ -134,7 +135,7 @@ module.exports = {
 		'@typescript-eslint/restrict-plus-operands': [
 			'error',
 			{
-				checkCompoundAssignments: true,
+				skipCompoundAssignments: false,
 			},
 		],
 		'@typescript-eslint/restrict-template-expressions': [
@@ -146,7 +147,7 @@ module.exports = {
 				allowAny: true,
 			},
 		],
-		'@typescript-eslint/sort-type-union-intersection-members': 'warn',
+		'@typescript-eslint/sort-type-constituents': 'warn',
 		'@typescript-eslint/switch-exhaustiveness-check': 'error',
 		'@typescript-eslint/unbound-method': 'warn',
 		camelcase: 'off',
